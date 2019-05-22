@@ -1,0 +1,41 @@
+.landing .landing-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(#04245f), to(#0a0a29));
+  background: linear-gradient(#04245f, #0a0a29);
+}
+
+.landing .landing-hero h1 {
+  font-weight: 300;
+  font-size: 2.8em;
+}
+
+.landing .landing-hero .btn {
+  margin: 20px 0 0 0;
+  border-radius: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background: none;
+  border: 2px solid white;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.landing .landing-hero .btn:hover {
+  background: #1697be;
+  border-color: rgba(255, 255, 255, 0);
+  color: #030330;
+}
+
+.landing .icons-area {
+  margin-top: -25px;
+}
+
+.landing .icons-area .col-md-4 {
+  padding: 0 20px;
+}
+
+.landing .icons-area i {
+  font-size: 2.65em;
+  margin: 20px 0 20px 0;
+}
+/*# sourceMappingURL=landing.css.map */

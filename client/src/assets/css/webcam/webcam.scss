@@ -1,0 +1,155 @@
+.webcam-group {
+  h3 {
+    margin-top: 40px;
+  }
+}
+
+.webcam-conteiner {
+  .title {
+    margin-bottom: -10px;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .title {
+      h6 {
+        font-size: 1.4em;
+      }
+    
+    }
+  }
+
+  .webcam-img-container {
+    .fa-trash-alt,
+    .fa-trash-alt::after {
+      display: none;
+    }
+
+    i {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 11;
+      color: rgba(230, 230, 230, 0.685);
+      transition: 200ms ease-in-out;
+    }
+
+    i.remove {
+      color: rgba(66, 5, 5, 0.616);
+    }
+
+    i::after {
+      background: rgba(255, 255, 255, 0.678);
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      padding: 0.4em 0.8em;
+      font-family: sans-serif;
+      font-size: 0.9em;
+      min-width: 120px;
+      line-height: 17px;
+    }
+
+    i.remove::after {
+      content: "Remove from favourites";
+    }
+
+    i.select::after {
+      content: "Show more details";
+    }
+
+    i.is-user::after {
+      content: "Add cam to favourites!";
+    }
+
+    i.no-user::after {
+      content: "Signup to add cam to favourites!";
+    }
+
+    i:hover {
+      color: yellow;
+      transform: scale(1.05);
+    }
+
+    i.is-user:hover::after {
+      display: block;
+    }
+
+    i.no-user:hover::after {
+      display: block;
+    }
+
+    i.remove:hover::after {
+      display: block;
+    }
+
+    i.select:hover::after {
+      display: block;
+    }
+
+    position: relative;
+    img {
+      z-index: 9;
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(7, 7, 26, 0.719);
+      display: block;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      padding: 1em 1em;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+
+      h6 {
+        margin: 0.8em 0;
+        color: #fff;
+        font-size: 0.8em;
+        span {
+          margin: 0 0.3em 0 0;
+          font-weight: 700;
+        }
+      }
+    }
+
+    // Select icon config
+    i.select {
+      right: 40px;
+    }
+
+    @media screen and (max-width: 576px) {
+      i {
+        font-size: 2em;
+      }
+
+      i.select {
+        right: 65px;
+      }
+    }
+  }
+
+  .webcam-img-container:hover {
+    cursor: pointer !important;
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+.profile-area {
+  .fa-star,
+  .fa-star::after {
+    display: none;
+  }
+
+  .fa-trash-alt,
+  .fa-trash-alt::after {
+    display: block!important;
+  }
+}

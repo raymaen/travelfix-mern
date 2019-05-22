@@ -1,0 +1,10 @@
+.footer {
+  padding: 20px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#031331), to(#0a0a29));
+  background: linear-gradient(#031331, #0a0a29);
+}
+
+.footer .btn:hover {
+  color: navy !important;
+}
+/*# sourceMappingURL=footer.css.map */

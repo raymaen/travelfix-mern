@@ -1,0 +1,5 @@
+{
+    "mongoURI" : "mongodb://eylon:eylon123@ds157276.mlab.com:57276/mern-db",
+    "jwtSecret" : "bindi#007",
+    "adminID" : "asasfasfas"
+}

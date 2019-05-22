@@ -1,0 +1,152 @@
+.webcam-group h3 {
+  margin-top: 40px;
+}
+
+.webcam-conteiner .title {
+  margin-bottom: -10px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .webcam-conteiner .title h6 {
+    font-size: 1.4em;
+  }
+}
+
+.webcam-conteiner .webcam-img-container {
+  position: relative;
+}
+
+.webcam-conteiner .webcam-img-container .fa-trash-alt,
+.webcam-conteiner .webcam-img-container .fa-trash-alt::after {
+  display: none;
+}
+
+.webcam-conteiner .webcam-img-container i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 11;
+  color: rgba(230, 230, 230, 0.685);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.webcam-conteiner .webcam-img-container i.remove {
+  color: rgba(66, 5, 5, 0.616);
+}
+
+.webcam-conteiner .webcam-img-container i::after {
+  background: rgba(255, 255, 255, 0.678);
+  color: black;
+  font-weight: 600;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0.4em 0.8em;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  min-width: 120px;
+  line-height: 17px;
+}
+
+.webcam-conteiner .webcam-img-container i.remove::after {
+  content: "Remove from favourites";
+}
+
+.webcam-conteiner .webcam-img-container i.select::after {
+  content: "Show more details";
+}
+
+.webcam-conteiner .webcam-img-container i.is-user::after {
+  content: "Add cam to favourites!";
+}
+
+.webcam-conteiner .webcam-img-container i.no-user::after {
+  content: "Signup to add cam to favourites!";
+}
+
+.webcam-conteiner .webcam-img-container i:hover {
+  color: yellow;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.webcam-conteiner .webcam-img-container i.is-user:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container i.no-user:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container i.remove:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container i.select:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container img {
+  z-index: 9;
+}
+
+.webcam-conteiner .webcam-img-container .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 7, 26, 0.719);
+  display: block;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 1em 1em;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.webcam-conteiner .webcam-img-container .overlay h6 {
+  margin: 0.8em 0;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.webcam-conteiner .webcam-img-container .overlay h6 span {
+  margin: 0 0.3em 0 0;
+  font-weight: 700;
+}
+
+.webcam-conteiner .webcam-img-container i.select {
+  right: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .webcam-conteiner .webcam-img-container i {
+    font-size: 2em;
+  }
+  .webcam-conteiner .webcam-img-container i.select {
+    right: 65px;
+  }
+}
+
+.webcam-conteiner .webcam-img-container:hover {
+  cursor: pointer !important;
+}
+
+.webcam-conteiner .webcam-img-container:hover .overlay {
+  opacity: 1;
+}
+
+.profile-area .fa-star,
+.profile-area .fa-star::after {
+  display: none;
+}
+
+.profile-area .fa-trash-alt,
+.profile-area .fa-trash-alt::after {
+  display: block !important;
+}
+/*# sourceMappingURL=webcam.css.map */

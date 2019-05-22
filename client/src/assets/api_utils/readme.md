@@ -1,0 +1,1 @@
+The actions in this folder are seperated from redux.

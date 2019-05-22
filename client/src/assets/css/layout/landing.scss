@@ -1,0 +1,34 @@
+.landing {
+  .landing-hero {
+    background: linear-gradient(rgb(4, 36, 95), rgb(10, 10, 41));
+    h1 {
+      font-weight: 300;
+      font-size: 2.8em;
+    }
+    .btn {
+      margin: 20px 0 0 0;
+      border-radius: 0;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      color: #fff;
+      background: none;
+      border: 2px solid rgb(255, 255, 255);
+      transition: 200ms ease-in-out;
+    }
+    .btn:hover {
+      background: rgb(22, 151, 190);
+      border-color: rgba(255, 255, 255, 0);
+      color: rgb(3, 3, 48);
+    }
+  }
+  .icons-area {
+      margin-top: -25px;
+    .col-md-4 {
+      padding: 0 20px;
+    }
+    i {
+      font-size: 2.65em;
+      margin: 20px 0 20px 0;
+    }
+  }
+}

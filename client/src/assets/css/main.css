@@ -1,0 +1,305 @@
+.landing .landing-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(#04245f), to(#0a0a29));
+  background: linear-gradient(#04245f, #0a0a29);
+}
+
+.landing .landing-hero h1 {
+  font-weight: 300;
+  font-size: 2.8em;
+}
+
+.landing .landing-hero .btn {
+  margin: 20px 0 0 0;
+  border-radius: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background: none;
+  border: 2px solid white;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.landing .landing-hero .btn:hover {
+  background: #1697be;
+  border-color: rgba(255, 255, 255, 0);
+  color: #030330;
+}
+
+.landing .icons-area {
+  margin-top: -25px;
+}
+
+.landing .icons-area .col-md-4 {
+  padding: 0 20px;
+}
+
+.landing .icons-area i {
+  font-size: 2.65em;
+  margin: 20px 0 20px 0;
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e6e4e4));
+  background: linear-gradient(#f7f7f7, #e6e4e4);
+  font-size: 1.04em;
+  padding: 10px 50px;
+}
+
+nav .navbar-brand {
+  font-size: 1.4em;
+  padding-right: 30px;
+  color: #1487d3 !important;
+}
+
+nav .nav-link {
+  color: #323233 !important;
+}
+
+nav .btn {
+  margin: 0 10px;
+  color: #fff !important;
+}
+
+.footer {
+  padding: 20px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#031331), to(#0a0a29));
+  background: linear-gradient(#031331, #0a0a29);
+}
+
+.footer .btn:hover {
+  color: navy !important;
+}
+
+.webcam-group h3 {
+  margin-top: 40px;
+}
+
+.webcam-conteiner .title {
+  margin-bottom: -10px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .webcam-conteiner .title h6 {
+    font-size: 1.4em;
+  }
+}
+
+.webcam-conteiner .webcam-img-container {
+  position: relative;
+}
+
+.webcam-conteiner .webcam-img-container .fa-trash-alt,
+.webcam-conteiner .webcam-img-container .fa-trash-alt::after {
+  display: none;
+}
+
+.webcam-conteiner .webcam-img-container i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 11;
+  color: rgba(230, 230, 230, 0.685);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.webcam-conteiner .webcam-img-container i.remove {
+  color: rgba(66, 5, 5, 0.616);
+}
+
+.webcam-conteiner .webcam-img-container i::after {
+  background: rgba(255, 255, 255, 0.678);
+  color: black;
+  font-weight: 600;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0.4em 0.8em;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  min-width: 120px;
+  line-height: 17px;
+}
+
+.webcam-conteiner .webcam-img-container i.remove::after {
+  content: "Remove from favourites";
+}
+
+.webcam-conteiner .webcam-img-container i.select::after {
+  content: "Show more details";
+}
+
+.webcam-conteiner .webcam-img-container i.is-user::after {
+  content: "Add cam to favourites!";
+}
+
+.webcam-conteiner .webcam-img-container i.no-user::after {
+  content: "Signup to add cam to favourites!";
+}
+
+.webcam-conteiner .webcam-img-container i:hover {
+  color: yellow;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.webcam-conteiner .webcam-img-container i.is-user:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container i.no-user:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container i.remove:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container i.select:hover::after {
+  display: block;
+}
+
+.webcam-conteiner .webcam-img-container img {
+  z-index: 9;
+}
+
+.webcam-conteiner .webcam-img-container .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 7, 26, 0.719);
+  display: block;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 1em 1em;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.webcam-conteiner .webcam-img-container .overlay h6 {
+  margin: 0.8em 0;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.webcam-conteiner .webcam-img-container .overlay h6 span {
+  margin: 0 0.3em 0 0;
+  font-weight: 700;
+}
+
+.webcam-conteiner .webcam-img-container i.select {
+  right: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .webcam-conteiner .webcam-img-container i {
+    font-size: 2em;
+  }
+  .webcam-conteiner .webcam-img-container i.select {
+    right: 65px;
+  }
+}
+
+.webcam-conteiner .webcam-img-container:hover {
+  cursor: pointer !important;
+}
+
+.webcam-conteiner .webcam-img-container:hover .overlay {
+  opacity: 1;
+}
+
+.profile-area .fa-star,
+.profile-area .fa-star::after {
+  display: none;
+}
+
+.profile-area .fa-trash-alt,
+.profile-area .fa-trash-alt::after {
+  display: block !important;
+}
+
+.selected-webcam .col-md-6 {
+  padding: 50px 0;
+}
+
+.selected-webcam .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#08041f), to(#050522));
+  background: linear-gradient(#08041f, #050522);
+  color: #fff;
+}
+
+.selected-webcam .info h5 {
+  padding: 0 0 40px 0;
+  font-size: 2.4em;
+  font-weight: 300;
+}
+
+.selected-webcam .info h6 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.selected-webcam .info h6 i {
+  margin: 0 10px 0 0;
+}
+
+.selected-webcam .info hr {
+  background: #fff;
+}
+
+.selected-webcam .webcam {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6e6f1), to(#ededf5));
+  background: linear-gradient(#e6e6f1, #ededf5);
+}
+
+.selected-webcam .webcam h5 {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.selected-webcam .webcam img {
+  margin: 0 0 10px 0;
+}
+
+.selected-webcam .webcam h6 {
+  color: #6e6e6e;
+  font-size: .7em;
+}
+
+.selected-webcam .gallery {
+  margin-top: -60px;
+  padding: 20px 30px 20px 30px;
+}
+
+.selected-webcam .gallery .col-md-4 {
+  padding: 10px;
+}
+
+.selected-webcam .gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body,
+.conteiner,
+.container-fluid,
+.row {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

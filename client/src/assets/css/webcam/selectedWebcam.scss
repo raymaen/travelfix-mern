@@ -1,0 +1,66 @@
+
+.selected-webcam{
+
+    .col-md-6{
+      padding: 50px 0;
+    }
+  
+    .info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(8, 4, 31),rgb(5, 5, 34));
+      color: #fff;
+      h5{
+        padding: 0 0 40px 0;
+        font-size: 2.4em;
+        font-weight: 300;
+      }
+  
+      h6{
+        font-size: 1.4em;
+        font-weight: 400;
+        i{
+          margin: 0 10px 0 0;
+        }
+      }
+  
+      hr{
+        background: #fff;
+  
+      }
+  
+    }
+  
+    .webcam{
+  
+      background: linear-gradient(rgb(230, 230, 241) , rgb(237, 237, 245));
+  
+      h5{
+        max-width: 65%;
+        margin: 0 auto;
+       
+      }
+      img{
+        margin: 0 0 10px 0;
+      }
+      h6{
+        color: rgb(110, 110, 110);
+        font-size: .7em;
+      }
+    }
+  
+    .gallery{
+      margin-top: -60px;
+      padding: 20px 30px 20px 30px;
+      
+      .col-md-4{
+        padding: 10px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
