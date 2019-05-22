@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { login } from "../../actions/authActions";
-
+import { clearErrors } from "../../actions/errorActions";
 import loaderSrc from '../../assets/img/loader.jpg'
 
 export class Login extends Component {
@@ -35,6 +35,10 @@ export class Login extends Component {
       password: ""
     });
   };
+
+  componentDidMount() {
+    this.props.clearErrors()
+  }
 
   render() {
     if (this.props.isAuth) {
@@ -113,5 +117,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { login }
+  { login ,clearErrors }
 )(Login);

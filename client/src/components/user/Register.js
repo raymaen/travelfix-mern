@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Redirect } from 'react-router-dom'
+import { Redirect } from "react-router-dom";
 import { register } from "../../actions/authActions";
+import { clearErrors } from "../../actions/errorActions";
 
 export class Register extends Component {
   state = {
@@ -40,15 +41,15 @@ export class Register extends Component {
     });
   };
 
-  componentDidUpdate(){
-
+  componentDidMount() {
+    this.props.clearErrors()
   }
+  
 
   render() {
-
-    if(this.props.isAuth){
-      const redirect = `/user/${this.props.userId}`
-  return <Redirect to={redirect}/>
+    if (this.props.isAuth) {
+      const redirect = `/user/${this.props.userId}`;
+      return <Redirect to={redirect} />;
     }
 
     return (
@@ -123,7 +124,6 @@ export class Register extends Component {
                 <p className="mt-5 mb-3 text-muted">© travelbox 2019</p>
               </div>
             </form>
-          
           </div>
         </div>
       </div>
@@ -132,14 +132,12 @@ export class Register extends Component {
 }
 
 const mapStateToProps = state => ({
-  error: state.error.msg.msg || '' ,
-  isAuth : state.auth.isAuthenticated ,
-  userId : state.auth.user ? state.auth.user.id : null
+  error: state.error.msg.msg || "",
+  isAuth: state.auth.isAuthenticated,
+  userId: state.auth.user ? state.auth.user.id : null
 });
-
-
 
 export default connect(
   mapStateToProps,
-  { register }
+  { register , clearErrors }
 )(Register);

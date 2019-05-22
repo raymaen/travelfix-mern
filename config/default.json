@@ -1,5 +1,4 @@
 {
-    "mongoURI" : "mongodb://eylon:eylon123@ds157276.mlab.com:57276/mern-db",
-    "jwtSecret" : "bindi#007",
-    "adminID" : "asasfasfas"
+    "mongoURI" : "mongodb://localhost:27017/travelfixlocal", 
+    "jwtSecret" : "yoursecret"
 }
